@@ -11,3 +11,10 @@ block-tnt: true
 block-water: false
 block-lava: true
 block-monsterspawner: false
+block-endportalframe: false
+
+### Actions ###
+###### Which actions should occur when someone tries to place a blocked block? ######
+warn-console: true
+warn-ops: true
+warn-permissions: false
