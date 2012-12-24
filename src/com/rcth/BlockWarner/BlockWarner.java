@@ -36,9 +36,9 @@ public final class BlockWarner extends JavaPlugin {
 	}
 	
 	 private void firstRun() throws Exception {
-		 if(!configFile.exists()){                        // checks if the yaml does not exists
-			 configFile.getParentFile().mkdirs();         // creates the /plugins/<pluginName>/ directory if not found
-			 copy(getResource("config.yml"), configFile); // copies the yaml from your jar to the folder /plugin/<pluginName>
+		 if(!configFile.exists()){
+			 configFile.getParentFile().mkdirs();
+			 copy(getResource("config.yml"), configFile);
 	        }
 	 }
 	 
@@ -59,7 +59,7 @@ public final class BlockWarner extends JavaPlugin {
 	    
 	    public void loadYamls() {
 	        try {
-	            config.load(configFile); //loads the contents of the File to its FileConfiguration
+	            config.load(configFile);
 	        } catch (Exception e) {
 	            e.printStackTrace();
 	        }
@@ -67,7 +67,7 @@ public final class BlockWarner extends JavaPlugin {
 	    
 	    public void saveYamls() {
 	        try {
-	            config.save(configFile); //saves the FileConfiguration to its File
+	            config.save(configFile);
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }
