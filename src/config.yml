@@ -1,0 +1,13 @@
+#########################################
+################# Notes #################
+#########################################
+
+############################################################################
+# This is the default configuration file. Adjust the settings if you want. #
+############################################################################
+
+### Blocked blocks ###
+block-tnt: true
+block-water: false
+block-lava: true
+block-monsterspawner: false
