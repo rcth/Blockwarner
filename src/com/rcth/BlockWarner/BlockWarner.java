@@ -33,6 +33,7 @@ public final class BlockWarner extends JavaPlugin {
         config = new YamlConfiguration();
         loadYamls();
 		getLogger().info("[BlockWarner] Enabled plugin!");
+		getLogger().info("[BlockWarner] This is a beta release. Please report any bugs.");
 	}
 	
 	 private void firstRun() throws Exception {
